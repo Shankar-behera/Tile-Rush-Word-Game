@@ -1,0 +1,4 @@
+node_modules
+db/wordgame.db
+.env
+npm-debug.log*
