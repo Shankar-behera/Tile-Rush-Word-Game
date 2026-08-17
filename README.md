@@ -172,12 +172,3 @@ Runs on `http://localhost:3000` and talks to the backend automatically.
 
 To run the frontend's test suite: `npm test` (inside `frontend/`).
 
-## Notes / things to revisit later
-
-- SQLite is fine for a single-instance hobby deploy but won't scale past
-  that — if this grows, Postgres is the natural next step.
-- There's no auth — anyone can end/query any game by ID. Fine for a casual
-  game, worth locking down before this handles real user accounts.
-- The dictionary is comprehensive but unfiltered, so it includes some
-  obscure/archaic entries. If certain words feel wrong to accept, it's a
-  one-line filter in the word list generation.
